@@ -10,9 +10,11 @@ Build an Active Directory home lab using Windows Server, Windows 10, and pfSense
 - Windows Server for as Domain Controller
 - Windows 10 as a client for the domain, and a target machine for exploitation
 - Kali Linux for penetration testing
-### Network Diagram
+### Network Topology and Diagram
+1. Local Network: Connects to your home router.
+2. pfSense: Acts as a firewall between the internet and the internal lab network.
+3. Internal Network: Hosts all VMs.
 ![HomeLab](https://github.com/user-attachments/assets/5f131cc9-74db-46c5-8f34-02c317235e29)
-
 ### Steps
 1. On VirtualBox, create all virtual machines by assigning the appropriate amount of RAM and CPU for each device. Also, configure the NIC adapter to the Internal network with the exception of adding an extra adapter on pfSense set to NAT, to communicate with the internet.
 2. Set up the pfSesne WAN side to use DHCP to get an IP from your home router, and set up the LAN side to act as a DHCP server. We will use 192.168.100.0/24 for our lab (the DHCP server can also be set up later using GUI).
