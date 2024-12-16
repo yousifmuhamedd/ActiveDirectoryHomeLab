@@ -15,7 +15,7 @@ Build an Active Directory home lab using Windows Server, Windows 10, and pfSense
 2. pfSense: Acts as a firewall between the internet and the internal lab network.
 3. Internal Network: Hosts all VMs.
    
-![HomeLab](https://github.com/user-attachments/assets/d4063f07-3faa-4491-85c3-d87e78d65242)
+![HomeLab](https://github.com/user-attachments/assets/3e44ffbd-ef62-453e-9981-829f08d7ce9a)
 
 ### Steps
 1. On VirtualBox, create all virtual machines by assigning the appropriate amount of RAM and CPU for each device. Also, configure the NIC adapter to the Internal network with the exception of adding an extra adapter on pfSense set to NAT, to communicate with the internet.
